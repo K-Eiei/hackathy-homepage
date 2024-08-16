@@ -1,8 +1,8 @@
 import Layout from "../components/layouts/article";
 
-export default function WorksPage() {
+const WorksPage = () => {
     return (
-        <Layout title={"Works"}>
+        <Layout title={"Works"} >
             <div className="h-[300px]" />
             <div className="text-cta-text flex justify-center items-center">
                 hahahaha
@@ -11,3 +11,5 @@ export default function WorksPage() {
         </Layout>
     );
 }
+
+export default WorksPage;   

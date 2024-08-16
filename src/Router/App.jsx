@@ -4,17 +4,24 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../components/layouts/layout";
 import WorksPage from "../view/works";
 import NotFound from "../view/_404";
+import PostsPage from "../view/posts";
+import WallpapersPage from "../view/wallpapers";
 
-export default function App() {
+const App = () => {
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/works" element={<WorksPage />} />
+          <Route path="/wallpapers" element={<WallpapersPage />} />
+          <Route path="/posts" element={<PostsPage />} />
           <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App; 
