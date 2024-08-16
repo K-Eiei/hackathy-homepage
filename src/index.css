@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-bold {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+  }
+
+  /* Not having in below. */
+  /* .font-normal {
+    font-family: "Sans Serif", system-ui;
+  } */
+}
+
+/* body {
+  font-family: "M PLUS Rounded 1c";
+} */
+
+.dark {
+  --background: 32, 32, 35;
+
+  --card: 49, 49, 52;
+  --border: 82, 82, 82;
+
+  --cta-text: 238, 238, 238;
+  --cta-btn-text: 32, 32, 35;
+  --cta-link: 254, 98, 194;
+  --cta-btn: 129, 230, 217;
+
+  background: rgba(var(--background));
+}
+
+.light {
+  --background: 240, 231, 219;
+
+  --card: 245, 240, 232;
+  --border: 82, 82, 82;
+
+  --cta-text: 32, 32, 35;
+  --cta-btn-text: 238, 238, 238;
+  --cta-link: 85, 137, 234;
+  --cta-btn: 49, 151, 149;
+
+  background: rgba(var(--background));
+}
