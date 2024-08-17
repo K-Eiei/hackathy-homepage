@@ -22,7 +22,7 @@ line-height: 20px;
 export default function Logo() {
     return (
         (
-            <Link to="/" preventScrollReset={false} className="w-full text-lg font-bold tracking-tight  me-5 flex justify-center items-center ">
+            <Link to="/" preventScrollReset={false} className="w-full me-5 text-lg font-bold tracking-tight   flex justify-center items-center outline-none ">
                 <LogoBox>
                     <IoPaw className="me-[0.1rem] -rotate-[35deg]" />
                     <span>Kongwarit Utapao</span>

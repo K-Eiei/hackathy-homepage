@@ -7,7 +7,7 @@ export default function HomePage() {
   const { toggleColorMode } = useColorMode();
 
   return (
-    <Layout >
+    <Layout>
       <div className="w-full h-full flex justify-center mt-10"  >
         <div className="w-[480px] h-auto flex flex-col items-center ">
 
@@ -34,7 +34,7 @@ export default function HomePage() {
               <div className="text-xl font-bold underline underline-offset-2">
                 Work
               </div>
-              <div className="">
+              <div className="w-full flex justify-center items-center">
                 Takuya is a freelance and a full-stack developer based in Osaka with a
                 passion for building digital services/stuff he wants. He has a knack
                 for all things launching products, from planning and designing all the
