@@ -17,6 +17,7 @@
   npm install framer-motion // Framer Motion requires React 18.
   npm i @emotion/styled @emotion/react
   npm i react-helmet-async // ช่วยในการจัดการกับเนื้อหาภายใน <head> ของ HTML
+  npm install --save three
 
   <!-- Recoment -->
   https://headlessui.com/ - Package ที่ช่วยในการสร้าง Dropdowns ต่างๆ

@@ -68,6 +68,7 @@ const _app = () => {
             }}
         >
             <Routes location={location} key={location.pathname}>
+                {/* <Routes > */}
                 <Route path="/" element={<Layout />}>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/works" element={<WorksPage />} />
@@ -77,6 +78,7 @@ const _app = () => {
                 </Route>
             </Routes>
         </AnimatePresence>
+
     );
 };
 
