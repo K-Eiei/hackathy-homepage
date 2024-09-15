@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import _App from "./Router/_app";
+import _App from "./view/_app";
 
 const App = () => {
   return (

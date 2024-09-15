@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../navbar";
 import Footer from "../footer";
@@ -6,7 +6,7 @@ import { ThemeProvider } from "../theme";
 import Fonts from "../font";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import VoxelDogLoader from '../voxel-dog-3D/voxel-dog-loader';
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Main = () => {
 
@@ -30,22 +30,25 @@ const Main = () => {
           <meta name="author" content="Kongwarit Utapao" />
         </Helmet>
 
-        <Navbar path={pathname} />
+        {/* <Navbar path={pathname} /> */}
 
 
-        <div className="pt-14">
+        <div className="pt-14s">
           {/* Model 3D */}
           {/* <div className="w-full h-full flex justify-center items-center">
             <div className=" w-[85%] md:w-[480px] h-[300px] mt-16 text-cta-text bg-card rounded-lg flex justify-center items-center"> Model </div>
           </div> */}
 
           {/* Model 3D */}
-          <Suspense fallback={<VoxelDogLoader />}>
+          {/* <Suspense fallback={<VoxelDogLoader />}>
             <LazyVoxelDog />
-          </Suspense>
+          </Suspense> */}
+
+
 
           <Outlet />
 
+          {/* </AnimatePresence> */}
           <Footer />
         </div>
       </ThemeProvider>
