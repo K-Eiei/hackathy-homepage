@@ -1,3 +1,15 @@
+## Project structure
+
+```
+$PROJECT_ROOT
+└── src
+    ├── components
+    ├── lib
+    ├── router
+    ├── view
+    └── public
+```
+
 ## Guide
 
 ```
