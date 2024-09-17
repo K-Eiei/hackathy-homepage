@@ -39,13 +39,7 @@ const Navbar_Page = props => {
 
       <div className={` w-[48rem] h-auto  p-2 text-cta-text flex justify-between items-center `}>
 
-        <div className="w-full md:w-[23rem] h-auto">
-          {/* <LinkItem href="/">
-              <div className="text-lg font-bold tracking-tight px-[10px] me-5 flex justify-center items-center ">
-                <IoPaw className="me-[0.1rem] -rotate-[35deg] hover:-rotate-0" />
-                Kongwarit Utapao
-              </div>
-            </LinkItem> */}
+        <div className="w-full md:w-[23rem]  mr-3 h-auto">
           <Logo />
         </div>
 

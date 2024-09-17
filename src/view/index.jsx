@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <Layout>
       <Container>
-        <div className="w-full h-[50px] mb-2 bg-card rounded-lg flex  justify-center items-center" >
+        <div className="w-auto h-[50px] mb-2 bg-card rounded-lg flex  justify-center items-center" >
           <span className="text-center text-cta-text text-sm  md:text-base">
             {"Hello, I'm an indie app developer based in Thailand!"}
           </span>
@@ -46,7 +46,7 @@ export default function HomePage() {
           </div>
         </Section>
 
-        <div className="h-[70rem]" />
+        <div className="h-[30rem]" />
       </Container>
     </Layout>
   );

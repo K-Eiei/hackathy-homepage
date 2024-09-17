@@ -2,12 +2,13 @@
 
 ```
 $PROJECT_ROOT
+├── public
 └── src
+    ├── assets
     ├── components
     ├── lib
     ├── router
-    ├── view
-    └── public
+    └── view
 ```
 
 ## Guide
