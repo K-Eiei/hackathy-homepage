@@ -7,33 +7,32 @@ import Fonts from "../components/font";
 import Component from "../router/routes";
 
 export default function _app() {
+  if (typeof window !== "undefined") {
+    window.history.scrollRestoration = "manual";
+  }
 
-    if (typeof window !== 'undefined') {
-        window.history.scrollRestoration = 'manual';
-    }
-
-    const location = useLocation(); // ใช้เพื่อติดตาม location ปัจจุบัน
-    return (
-        <HelmetProvider>
-            <ThemeProvider>
-                <Fonts />
-                <Layout router={location}>
-                    <div className="p-14">
-                        <AnimatePresence
-                            mode="wait"
-                            initial={true}
-                            onExitComplete={() => {
-                                if (typeof window !== 'undefined') {
-                                    window.scrollTo({ top: 0 });
-                                    console.log("scroll to top");
-                                }
-                            }}
-                        >
-                            <Component location={location} key={location.pathname} />
-                        </AnimatePresence>
-                    </div>
-                </Layout>
-            </ThemeProvider>
-        </HelmetProvider>
-    );
-};
+  const location = useLocation(); // ใช้เพื่อติดตาม location ปัจจุบัน
+  return (
+    <HelmetProvider>
+      <ThemeProvider>
+        <Fonts />
+        <Layout router={location}>
+          <div className="p-0">
+            <AnimatePresence
+              mode="wait"
+              initial={true}
+              onExitComplete={() => {
+                if (typeof window !== "undefined") {
+                  window.scrollTo({ top: 0 });
+                  console.log("scroll to top");
+                }
+              }}
+            >
+              <Component location={location} key={location.pathname} />
+            </AnimatePresence>
+          </div>
+        </Layout>
+      </ThemeProvider>
+    </HelmetProvider>
+  );
+}
