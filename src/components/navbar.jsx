@@ -37,9 +37,9 @@ const Navbar_Page = props => {
   return (
     <nav className={`w-full h-auto ${theme === "light" ? "bg-[#ffffff40]/30" : "bg-[#20202380]/30"} backdrop-blur-[10px] z-[9999] fixed top-0 flex justify-center items-center`}>
 
-      <div className={` w-[48rem] h-auto  p-2 text-cta-text flex justify-between items-center `}>
+      <div className={` w-[48rem] h-auto  p-2 px- text-cta-text flex justify-between items-center `}>
 
-        <div className="w-full md:w-[23rem]  mr-3 h-auto">
+        <div className="w-full md:w-[23rem] sm:mr-3 h-auto">
           <Logo />
         </div>
 
