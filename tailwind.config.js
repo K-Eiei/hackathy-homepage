@@ -17,6 +17,7 @@ export default {
         card: "rgba(var(--card))",
         border: "rgba(var(--border))",
         "cta-text": "rgba(var(--cta-text))",
+        "cta-underline": "rgba(var(--cta-underline))",
         "cta-btn-text": "rgba(var(--cta-btn-text))",
         "cta-link": "rgba(var(--cta-link))",
         "cta-btn": "rgba(var(--cta-btn))",

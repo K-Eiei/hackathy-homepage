@@ -4,22 +4,25 @@ import ThemeToggle from "./theme-toggle-button";
 import { useColorMode } from "./theme";
 import Logo from "./logo";
 import DropdownMenu from "./dropdown-menu";
+import { IoLogoGithub } from "react-icons/io5";
 
 const LinkItem = ({ href, path, children, css }) => {
-  const active = path === href
+  const active = path === href;
 
   return (
     <Link
       to={href}
-      className={`h-full p-2 ${active ? "bg-[#88CCCA]" : undefined} ${active ? "text-[#202023]" : "text-cta-text"} ${css}`}
+      className={`h-full p-2 ${active ? "bg-[#88CCCA]" : undefined} ${
+        active ? "text-[#202023]" : "text-cta-text"
+      } ${css}`}
       preventScrollReset={true}
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
-const Navbar_Page = props => {
+const Navbar_Page = (props) => {
   const pathname = props.path;
   const { theme } = useColorMode();
 
@@ -35,29 +38,55 @@ const Navbar_Page = props => {
   }, [theme]);
 
   return (
-    <nav className={`w-full h-auto ${theme === "light" ? "bg-[#ffffff40]/30" : "bg-[#20202380]/30"} backdrop-blur-[10px] z-[9999] fixed top-0 flex justify-center items-center`}>
-
-      <div className={` w-[48rem] h-auto  p-2 px- text-cta-text flex justify-between items-center `}>
-
+    <nav
+      className={`w-full h-auto ${
+        theme === "light" ? "bg-[#ffffff40]/30" : "bg-[#20202380]/30"
+      } backdrop-blur-[10px] z-[9999] fixed top-0 flex justify-center items-center`}
+    >
+      <div
+        className={` w-[48rem] h-auto  p-2 px- text-cta-text flex justify-between items-center `}
+      >
         <div className="w-full md:w-[23rem] sm:mr-3 h-auto">
           <Logo />
         </div>
 
         <div className="w-full h-full hidden md:flex justify-start items-center gap-2  ">
-          <LinkItem href="/works" path={pathname} css={"hover:underline font-sans"}>
+          <LinkItem
+            href="/works"
+            path={pathname}
+            css={"hover:underline hover:underline-offset-4 font-sans"}
+          >
             Works
           </LinkItem>
-          <LinkItem href="/wallpapers" path={pathname} css={"hover:underline font-sans"}>
+          <LinkItem
+            href="/wallpapers"
+            path={pathname}
+            css={"hover:underline hover:underline-offset-4 font-sans"}
+          >
             Wallpapers
           </LinkItem>
-          <LinkItem href="/Posts" path={pathname} css={"hover:underline font-sans "}>
+          <LinkItem
+            href="/Posts"
+            path={pathname}
+            css={"hover:underline hover:underline-offset-4 font-sans "}
+          >
             Posts
           </LinkItem>
-          <LinkItem href="/Uses" path={pathname} css={"hover:underline font-sans"}>
+          <LinkItem
+            href="/Uses"
+            path={pathname}
+            css={"hover:underline hover:underline-offset-4 font-sans"}
+          >
             Uses
           </LinkItem>
-          <LinkItem href="/My_GtiHub" path={pathname} css={"hover:underline font-sans"}>
-            My_GtiHub
+          <LinkItem
+            href="/My_GtiHub"
+            path={pathname}
+            css={
+              "flex items-center gap-1 hover:underline hover:underline-offset-4 font-sans"
+            }
+          >
+            <IoLogoGithub /> GitHub
           </LinkItem>
         </div>
 
@@ -65,11 +94,9 @@ const Navbar_Page = props => {
           <ThemeToggle />
           <DropdownMenu />
         </div>
-
       </div>
-
     </nav>
   );
-}
+};
 
-export default Navbar_Page
+export default Navbar_Page;
