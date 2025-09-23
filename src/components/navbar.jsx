@@ -46,7 +46,7 @@ const Navbar_Page = (props) => {
       <div
         className={` w-[48rem] h-auto  p-2 px- text-cta-text flex justify-between items-center `}
       >
-        <div className="w-full md:w-[23rem] sm:mr-3 h-auto">
+        <div className="w-full_ w-auto h-auto hiddenmd:flex md:w-[23rem] ms-3 md:ms-0 sm:mr-3">
           <Logo />
         </div>
 
@@ -90,7 +90,7 @@ const Navbar_Page = (props) => {
           </LinkItem>
         </div>
 
-        <div className="w-full md:w-[18rem] flex justify-end gap-2">
+        <div className="w-auto md:w-[18rem] flex justify-end gap-2">
           <ThemeToggle />
           <DropdownMenu />
         </div>

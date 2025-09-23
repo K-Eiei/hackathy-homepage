@@ -15,22 +15,23 @@ export default function HomePage() {
           </span>
         </div>
 
-        <div className="w-full h-auto flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start">
+        <div className="w-full h-auto flex flex-col justify-start items-start md:flex-row md:justify-between md:items-start">
           <div className="w-auto h-auto flex flex-col">
             <div className="text-3xl md:text-4xl font-bold text-cta-text">
               Kongwarit Utapao
             </div>
             <p className="text-cta-text">Digital Craftsman ( Developer )</p>
           </div>
-          {/* <div className="w-[100px] h-[100px] bg-white"></div> */}
-          <div className="w-[100px] h-[100px] mt-4 md:mt-0 rounded-full bg-white border-2 border-white overflow-hidden flex justify-center items-center">
-            <img
-              src="public/images/duck-icon.png"
-              alt="Profile image"
-              width={100}
-              height={100}
-              // className=" md:mt-0 p-1  "
-            />
+          <div className="w-full md:w-auto h-auto flex md:flex-none justify-center items-center">
+            <div className="w-[100px] h-[100px] mt-4 md:mt-0 rounded-full bg-white border-2 border-white overflow-hidden flex justify-center items-center">
+              <img
+                src="public/images/duck-icon.png"
+                alt="Profile image"
+                width={100}
+                height={100}
+                // className=" md:mt-0 p-1  "
+              />
+            </div>
           </div>
         </div>
 
