@@ -25,7 +25,7 @@ export default function HomePage() {
           <div className="w-full md:w-auto h-auto flex md:flex-none justify-center items-center">
             <div className="w-[100px] h-[100px] mt-4 md:mt-0 rounded-full bg-white border-2 border-white overflow-hidden flex justify-center items-center">
               <img
-                src="public/images/duck-icon.png"
+                src="../images/duck-icon.png"
                 alt="Profile image"
                 width={100}
                 height={100}
