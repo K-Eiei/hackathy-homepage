@@ -29,7 +29,6 @@ export default function HomePage() {
                 alt="Profile image"
                 width={100}
                 height={100}
-                // className=" md:mt-0 p-1  "
               />
             </div>
           </div>
@@ -59,12 +58,10 @@ export default function HomePage() {
               preventScrollReset={false}
             >
               My portfolio
-              {/* <span>{">"}</span> */}
               <RiArrowRightSLine className="ms-2" />
             </Link>
           </div>
         </Section>
-        <div className="text-cta-text">test</div>
         <div className="h-[30rem]" />
       </Container>
     </Layout>

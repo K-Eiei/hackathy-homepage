@@ -8,7 +8,7 @@ export default function NotFound() {
         <hr className="w-full my-4 h-0.5 border-t-0 bg-cta-text opacity-50" />
       </div>
       <Link
-        className="w-[180px] h-[40px] my-3 mb-6 bg-cta-btn  rounded-lg font-bold text-cta-btn-text flex justify-center items-center"
+        className="w-[180px] h-[40px] my-3 mb-6 bg-cta-btn hover:bg-teal-500 rounded-lg font-bold text-cta-btn-text flex justify-center items-center"
         to={"/"}
       >
         Return to home
