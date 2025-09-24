@@ -17,20 +17,18 @@ export default function _app() {
       <ThemeProvider>
         <Fonts />
         <Layout router={location}>
-          <div className="p-0">
-            <AnimatePresence
-              mode="wait"
-              initial={true}
-              onExitComplete={() => {
-                if (typeof window !== "undefined") {
-                  window.scrollTo({ top: 0 });
-                  console.log("scroll to top");
-                }
-              }}
-            >
-              <Component location={location} key={location.pathname} />
-            </AnimatePresence>
-          </div>
+          <AnimatePresence
+            mode="wait"
+            initial={true}
+            onExitComplete={() => {
+              if (typeof window !== "undefined") {
+                window.scrollTo({ top: 0 });
+                console.log("scroll to top");
+              }
+            }}
+          >
+            <Component location={location} key={location.pathname} />
+          </AnimatePresence>
         </Layout>
       </ThemeProvider>
     </HelmetProvider>

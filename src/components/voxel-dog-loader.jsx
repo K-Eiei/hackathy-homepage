@@ -9,7 +9,6 @@ export const DogSpinner = () => (
   </div>
 );
 
-// Custom Container with styles similar to Box from Chakra-UI
 export const DogContainer = forwardRef(({ children }, ref) => (
   <div
     ref={ref}
