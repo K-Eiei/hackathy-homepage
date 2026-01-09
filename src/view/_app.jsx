@@ -23,7 +23,7 @@ export default function _app() {
             onExitComplete={() => {
               if (typeof window !== "undefined") {
                 window.scrollTo({ top: 0 });
-                console.log("scroll to top");
+                // console.log("scroll to top");
               }
             }}
           >
