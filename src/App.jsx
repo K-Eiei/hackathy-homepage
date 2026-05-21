@@ -4,7 +4,7 @@ import _App from "./view/_app";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true, }}>
       <_App />
     </BrowserRouter>
   );

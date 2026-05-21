@@ -2,6 +2,7 @@ import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { Link } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { BioSection, BioYear } from "../components/bio";
 import Paragraph from "../components/paragraph";
 import Container from "../components/container";
 
@@ -40,14 +41,10 @@ export default function HomePage() {
               Work
             </div>
             <Paragraph>
-              {/* <div className="w-full text-justify indent-4 hyphens-auto"> */}
-              Takuya is a freelance and a full-stack developer based in Osaka
-              with a passion for building digital services/stuff he wants. He
-              has a knack for all things launching products, from planning and
-              designing all the way to solving real-life problems with code.
-              When not online, he loves hanging out with his camera. Currently,
-              he is living off of his own product called.
-              {/* </div> */}
+              👋Hello, I'm Kongwait Utapao, a Full-Stack Developer. I'm passionate about coding because it
+              gives me the fulfillment of creating something new. ✨ I also love diving into other people's code.
+              I'm always curious to see how they tackle problems and bring ideas to life! 🔍🤯 When I am not coding,
+              I enjoy reading books and listening to music.
             </Paragraph>
           </div>
           <div className="w-full h-auto flex justify-center items-center">
@@ -62,8 +59,62 @@ export default function HomePage() {
             </Link>
           </div>
         </Section>
-        <div className="h-[30rem]" />
+
+        <Section>
+          <div className="w-full md:w-full text-cta-text">
+            <div className="my-3 text-xl font-bold underline underline-offset-[6px] decoration-4 decoration-cta-underline">
+              Bio
+            </div>
+
+            <BioSection>
+              <BioYear>2024</BioYear>
+
+              Completed my Bachelor&apos;s degree in Computer Engineering and Artificial Intelligence at Mahanakorn University of Technology.
+
+            </BioSection>
+
+            <BioSection>
+              <BioYear>2024</BioYear>
+
+              Web Developer Intern at GROUP MAKER COMPANY LIMITED.
+              <br />
+              <ul className="list-disc list-outside text-sm opacity-80 mt-1 space-y-1 indent-0 ml-6">
+                <li>Designed and developed dynamic websites and cross-platform desktop applications using Electron.js
+                  for the frontend and Node.js for the backend.</li>
+                <li>Architected and managed MySQL database schemas.</li>
+              </ul>
+
+            </BioSection>
+
+            <BioSection>
+              <BioYear>2025</BioYear>
+
+              Robotics Software Engineer at GROUP MAKER COMPANY LIMITED.
+              <br />
+              <ul className="list-disc list-outside text-sm opacity-80 mt-1 space-y-1 indent-0 ml-6">
+                <li>Robot Interface & IoT Solutions.</li>
+                <li>Developed a comprehensive Robot Control Application to interface directly with the robot&apos;s backend.</li>
+                <li>Built control software for a &quot;Remote IO Module Box&quot; to manage I/O signals via Socket communication.</li>
+                <li>Programmed ROS2 modules for &apos;Area Detect&apos; to enhance autonomous navigation safety.</li>
+              </ul>
+
+            </BioSection>
+
+          </div>
+        </Section>
+
+        <Section >
+          <div className="w-full md:w-full text-cta-text">
+            <div className="my-3 text-xl font-bold underline underline-offset-[6px] decoration-4 decoration-cta-underline">
+              I ♥
+            </div>
+            <Paragraph>
+              Art🎨 Music🎵 Reading books📖 Movies🎬
+            </Paragraph>
+          </div>
+        </Section>
+
       </Container>
-    </Layout>
+    </Layout >
   );
 }
