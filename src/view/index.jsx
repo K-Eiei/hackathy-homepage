@@ -78,7 +78,7 @@ export default function HomePage() {
 
               Web Developer Intern at GROUP MAKER COMPANY LIMITED.
               <br />
-              <ul className="list-disc list-outside text-sm opacity-80 mt-1 space-y-1 indent-0 ml-6">
+              <ul className="list-disc list-outside text-sm opacity-80 mt-1 space-y-1 indent-0 sm:ml-6 ml-4">
                 <li>Designed and developed dynamic websites and cross-platform desktop applications using Electron.js
                   for the frontend and Node.js for the backend.</li>
                 <li>Architected and managed MySQL database schemas.</li>
@@ -91,11 +91,11 @@ export default function HomePage() {
 
               Robotics Software Engineer at GROUP MAKER COMPANY LIMITED.
               <br />
-              <ul className="list-disc list-outside text-sm opacity-80 mt-1 space-y-1 indent-0 ml-6">
+              <ul className="list-disc list-outside text-sm opacity-80 mt-1 space-y-1 indent-0 sm:ml-6 ml-4">
                 <li>Robot Interface & IoT Solutions.</li>
                 <li>Developed a comprehensive Robot Control Application to interface directly with the robot&apos;s backend.</li>
                 <li>Built control software for a &quot;Remote IO Module Box&quot; to manage I/O signals via Socket communication.</li>
-                <li>Programmed ROS2 modules for &apos;Area Detect&apos; to enhance autonomous navigation safety.</li>
+                <li>Programmed ROS2 modules for &quot;Area Detect&quot; to enhance autonomous navigation safety.</li>
               </ul>
 
             </BioSection>
