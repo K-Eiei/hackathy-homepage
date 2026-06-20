@@ -26,10 +26,11 @@ export default function HomePage() {
           <div className="w-full md:w-auto h-auto flex md:flex-none justify-center items-center">
             <div className="w-[100px] h-[100px] mt-4 md:mt-0 rounded-full bg-white border-2 border-white overflow-hidden flex justify-center items-center">
               <img
-                src="../images/duck-icon.png"
+                src="../images/me.jpg"
                 alt="Profile image"
                 width={100}
                 height={100}
+              // className="-translate-y-2๘ scale-110 -translate-x-1"
               />
             </div>
           </div>
