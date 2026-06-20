@@ -30,7 +30,6 @@ export default function HomePage() {
                 alt="Profile image"
                 width={100}
                 height={100}
-              // className="-translate-y-2๘ scale-110 -translate-x-1"
               />
             </div>
           </div>
